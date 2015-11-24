@@ -1,0 +1,193 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/** grid **/
+/* line 13, ../sass/_grid.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/_grid.scss */
+.frame {
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* line 23, ../sass/_grid.scss */
+.frame:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 31, ../sass/_grid.scss */
+.bit-center {
+  float: none !important;
+  margin: 0 auto;
+}
+
+/* line 37, ../sass/_grid.scss */
+[class*='bit-'] {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-1 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-2 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-3 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-4 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-5 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-6 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-7 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-8 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-9 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-10 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-11 {
+  width: 100%;
+}
+
+/* line 44, ../sass/_grid.scss */
+.bit-12 {
+  width: 100%;
+}
+
+/* line 53, ../sass/_grid.scss */
+.bit-25 {
+  width: 25%;
+}
+
+/* line 53, ../sass/_grid.scss */
+.bit-33 {
+  width: 33%;
+}
+
+/* line 53, ../sass/_grid.scss */
+.bit-40 {
+  width: 40%;
+}
+
+/* line 53, ../sass/_grid.scss */
+.bit-66 {
+  width: 66%;
+}
+
+/* line 53, ../sass/_grid.scss */
+.bit-75 {
+  width: 75%;
+}
+
+@media screen and (min-width: 40rem) {
+  /* line 67, ../sass/_grid.scss */
+  [class*='bit-'] {
+    float: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  /* line 82, ../sass/_grid.scss */
+  .bit-1 {
+    width: 8.33333%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-2 {
+    width: 16.66667%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-3 {
+    width: 25%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-4 {
+    width: 33.33333%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-5 {
+    width: 41.66667%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-6 {
+    width: 50%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-7 {
+    width: 58.33333%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-8 {
+    width: 66.66667%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-9 {
+    width: 75%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-10 {
+    width: 83.33333%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-11 {
+    width: 91.66667%;
+  }
+
+  /* line 82, ../sass/_grid.scss */
+  .bit-12 {
+    width: 100%;
+  }
+}

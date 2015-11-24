@@ -1,0 +1,29 @@
+// Helpers
+$full:        		100%;
+$half:        		100% / 2;
+
+// Media Queries Breakpoints Mobile-first.
+// Can be tweaked if need be.
+$medium:      		40rem; // Portrait tablet to landscape tablet
+$large:       		64rem; // Small desktop to large desktop
+
+// Example padding for grid
+// Doesn't actually need to be kept in.
+$bit-padding: 		2rem;
+
+// Grid widths
+// ----------------------------------------------
+// Feel free to change this to how many columns
+// you want this grid system to have.
+$start:       		1;
+$end:         		12;
+
+// Commons widths
+// ----------------------------------------------
+// A list that contains common percentage widths
+// as column classes e.g bit-60, bit-40, bit-75
+// customise this list as you require
+$common: 25, 33, 40, 66, 75;
+
+// Frame width (grid wrapper)
+$frame-width: 		100%;

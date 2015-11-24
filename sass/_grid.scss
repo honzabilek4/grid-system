@@ -1,0 +1,86 @@
+
+// Mixins, not worth having its own file.
+// Border box
+// Should probably use auto-prefix on this.
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+          box-sizing: $type;
+}
+
+// Start the grid.
+// Optional hard reset
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing(border-box);
+}
+
+// clearfix
+.frame {
+    margin: 0 auto;
+    max-width: $frame-width;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//for one container smaller than bit-12
+.bit-center{
+       float: none!important;
+       margin: 0 auto;
+} 
+
+// Attribute selector
+    [class*='bit-'] {
+        float: left;
+        padding-left: $bit-padding/2;
+        padding-right: $bit-padding/2;
+    }   
+// Mobile
+@for $i from $start through $end {
+    .bit-#{$i} {
+        width: $full
+    }
+}
+
+// Common widths
+// Please use the media queries below to respond these widths
+// Feel free to pull request new widths
+@each $i in $common {
+    .bit-#{$i} {
+        width: percentage($i / 100);
+    }
+}
+
+
+// Responsiveness
+// Feel free to use your own responsive widths and styles for the grid
+// These are mostly for example use only.
+// -------------------------------------------------------------------
+
+// Medium
+@media screen and (min-width: $medium)
+{
+        [class*='bit-'] {
+        float: left;
+        padding-left: $bit-padding;
+        padding-right: $bit-padding;
+    }
+}
+
+
+// Large
+
+@media screen and (min-width: $large)
+{
+    
+    // Create grid widths (1-12)
+    @for $i from $start through $end {
+        .bit-#{$i} {
+             width: ($full / $end)*$i ;
+         }
+    }
+}
